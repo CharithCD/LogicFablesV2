@@ -8,7 +8,7 @@ import Image from 'next/image'
 const menuItems = [
     {
         name: 'Portfolio',
-        href: '#portfolio',
+        href: '/#portfolio',
     },
     {
         name: 'Blog',
@@ -32,7 +32,9 @@ export default function Navbar() {
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                 <div className="inline-flex items-center mt-2">
                     <span>
-                        <Image src='/img/logo-nav.png' width='150' height='150'></Image>
+                        <a href="/">
+                            <Image src='/img/logo-nav.png' width='150' height='150'></Image>
+                        </a>
                     </span>
                 </div>
                 <div className="hidden grow items-start lg:flex">

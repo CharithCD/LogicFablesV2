@@ -10,6 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        border: 'background ease infinite',
+      },
+      keyframes: {
+        background: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+      },
       colors: {
         // primary : 'rgb(59, 27, 226)',
         
@@ -24,5 +33,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
