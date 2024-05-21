@@ -33,7 +33,7 @@ export default function Navbar() {
                 <div className="inline-flex items-center mt-2">
                     <span>
                         <a href="/">
-                            <Image src='/img/logo-nav.png' width='150' height='150'></Image>
+                            <Image src='/img/logo-nav.png' width='150' height='150' alt='logo'></Image>
                         </a>
                     </span>
                 </div>
@@ -70,7 +70,7 @@ export default function Navbar() {
                                 <div className="flex items-center justify-between">
                                     <div className="inline-flex items-center space-x-2">
                                         <a href="/">
-                                            <Image src='/img/logo-nav.png' width='130' height='100' className='ml-2'></Image>
+                                            <Image src='/img/logo-nav.png' width='130' height='100' className='ml-2' alt='logo'></Image>
                                         </a>
                                     </div>
                                     <div className="-mr-2">

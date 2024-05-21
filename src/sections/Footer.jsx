@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -13,7 +14,7 @@ const Footer = () => {
             <div className="mt-6 w-auto md:mt-0">
               <a href="/">
                 <div className="inline-flex items-center">
-                  <img src="/img/logo-footer.png" alt="LogicFables"/>
+                  <Image src="/img/logo-footer.png" alt="LogicFables" width={200} height={100}/>
                 </div>
               </a>
             </div>

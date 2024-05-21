@@ -19,7 +19,7 @@ export default function Home() {
               <span className="text-primary font-bold">Logic Fables</span>
             </h1>
             <p className="hidden max-w-lg text-center text-lightAsh md:block md:text-left ">
-              Whether you're a small business owner or an individual with big ideas, we're here to help you succeed in the
+              Whether you&#39;re a small business owner or an individual with big ideas, we&#39;re here to help you succeed in the
               digital world. From stunning websites to custom web systems, our team is committed to delivering results that
               exceed your expectations.
             </p>
@@ -70,7 +70,7 @@ export default function Home() {
               </div>
               <p className="text-center text-primary mt-4 mb-7 text-[20px] font-bold">WordPress Development</p>
               <p className="text-justify leading-6 text-lightAsh">
-                Leverage the flexibility and scalability of WordPress for your website needs. Whether it's a blog, business
+                Leverage the flexibility and scalability of WordPress for your website needs. Whether it&#39;s a blog, business
                 website, or e-commerce store, our WordPress development services ensure a customizable and user-friendly
                 solution tailored to your requirements.
               </p>
@@ -109,7 +109,7 @@ export default function Home() {
               <p className="text-center mt-4 mb-7 text-primary text-[20px] font-bold">Website Optimization</p>
               <p className="text-justify leading-6 text-lightAsh">
                 Improve the performance and user experience of your website with our optimization services. From speed
-                enhancements to SEO improvements, we'll help you maximize your online visibility and drive more traffic to
+                enhancements to SEO improvements, we&#39;ll help you maximize your online visibility and drive more traffic to
                 your site
               </p>
             </div>
