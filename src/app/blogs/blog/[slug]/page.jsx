@@ -29,8 +29,8 @@ const page = async ({ params }) => {
                     <h2 className="text-2xl md:text-4xl font-bold">{blog.title}</h2>
                 </div>
                 <div className="p-4 flex flex-col md:flex-row justify-around gap-x-12">
-                    <p className="text-sm text-gray-700">By: {blog.authorName}</p>
-                    <p className="text-sm text-gray-700">Published on: {formatDate(blog.publishedAt)}</p>
+                    <p className="text-sm">By: {blog.authorName}</p>
+                    <p className="text-sm">Published on: {formatDate(blog.publishedAt)}</p>
                 </div>
                 <div className='p-4 mt-4'>
                     <Image
@@ -41,7 +41,7 @@ const page = async ({ params }) => {
                     />
                 </div>
             </div>
-            <div className='max-w-5xl px-8 mx-auto my-8 flex flex-col prose prose-lg md:p-4'>
+            <div className='max-w-5xl px-8 mx-auto my-8 flex flex-col prose prose-lg md:p-4 dark:prose-invert'>
                 <PortableText value={blog.content} className=''></PortableText>
             </div>
             <div className='mt-24'>

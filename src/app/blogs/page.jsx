@@ -27,18 +27,18 @@ const page = async () => {
                 {/* Product tag-line */}
                 <div className="relative mx-auto text-center md:-mt-5 md:mb-16">
                     {/* Heading */}
-                    <h2 className="text-darkAsh text-3xl md:text-4xl font-bold">Browse Our Blogs <span className="text-primary">@Logic
+                    <h2 className="text-3xl md:text-4xl font-bold">Browse Our Blogs <span className="text-primary">@Logic
                         Fables</span></h2>
                 </div>
                 {/* Card list */}
                 <div className="mt-10 mx-auto grid gap-16 grid-cols-1 md:mt-0 md:grid-cols-2 lg:grid-cols-3">
 
                     {blogs.map((blog) => (
-                        <article key={blog.slug} className="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
-                            <div className="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                                <time dateTime={formatDate(blog.publishedAt)} className="block text-xs text-gray-500"> {formatDate(blog.publishedAt)} </time>
+                        <article key={blog.slug} className="hover:animate-background rounded-xl bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s]">
+                            <div className="rounded-[10px] p-4 !pt-20 sm:p-6">
+                                <time dateTime={formatDate(blog.publishedAt)} className="block text-xs"> {formatDate(blog.publishedAt)} </time>
                                 <Link href={`/blogs/blog/${blog.slug}`}>
-                                    <h3 className="mt-0.5 text-lg font-medium text-gray-900">
+                                    <h3 className="mt-0.5 text-lg font-medium text-black">
                                         {blog.title}
                                     </h3>
                                 </Link>
@@ -53,7 +53,7 @@ const page = async () => {
                                     }
                                 </div>
                                 <div className="mt-4">
-                                    <p className="text-sm text-gray-700 line-clamp-6">
+                                    <p className="text-sm text-black line-clamp-6">
                                         {blog.summary}
                                     </p>
                                 </div>

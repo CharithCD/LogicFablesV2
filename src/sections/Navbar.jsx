@@ -4,6 +4,7 @@ import React from 'react'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { ModeToggle } from '@/components/mode-toggle'
 
 const menuItems = [
     {
@@ -28,12 +29,12 @@ export default function Navbar() {
     }
 
     return (
-        <div className="relative container mx-auto px-12 p-4 bg-white">
+        <div className="relative container mx-auto px-12 p-4 ">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
                 <div className="inline-flex items-center mt-2">
                     <span>
                         <a href="/">
-                            <Image src='/img/logo-nav.png' width='150' height='150' alt='logo'></Image>
+                            <Image src='/img/logo.png' width='160' height='150' alt='logo'></Image>
                         </a>
                     </span>
                 </div>
@@ -43,7 +44,7 @@ export default function Navbar() {
                             <li key={item.name}>
                                 <a
                                     href={item.href}
-                                    className="font-semibold text-gray-800 hover:text-gray-900"
+                                    className="font-semibold"
                                 >
                                     {item.name}
                                 </a>
@@ -51,26 +52,28 @@ export default function Navbar() {
                         ))}
                     </ul>
                 </div>
-                <div className="hidden lg:block">
+                <div className="hidden lg:flex gap-4">
                     <Link
                         href={'/#contact'}
                         className="p-3 px-5 font-semibold text-white bg-primary  rounded-full S hover:bg-primaryDark"
                     >
                         Contact Us
                     </Link>
+                    <ModeToggle className='p-0' />
                 </div>
 
-                <div className="lg:hidden">
-                    <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer text-primary" />
+                <div className="flex gap-3 lg:hidden">
+                    <ModeToggle />
+                    <Menu onClick={toggleMenu} className="mt-1 h-6 w-6 cursor-pointer text-primary" />
                 </div>
                 {isMenuOpen && (
                     <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
-                        <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div className="divide-y-2 divide-gray-50 rounded-lg dark:bg-slate-900 shadow-lg ring-1 ring-black ring-opacity-5">
                             <div className="px-5 pb-6 pt-5">
                                 <div className="flex items-center justify-between">
                                     <div className="inline-flex items-center space-x-2">
                                         <a href="/">
-                                            <Image src='/img/logo-nav.png' width='130' height='100' className='ml-2' alt='logo'></Image>
+                                            <Image src='/img/logo.png' width='130' height='100' className='ml-2' alt='logo'></Image>
                                         </a>
                                     </div>
                                     <div className="-mr-2">
@@ -92,7 +95,7 @@ export default function Navbar() {
                                                 href={item.href}
                                                 className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
                                             >
-                                                <span className="ml-3 text-base font-medium text-gray-900">
+                                                <span className="ml-3 text-base font-medium ">
                                                     {item.name}
                                                 </span>
                                             </a>
