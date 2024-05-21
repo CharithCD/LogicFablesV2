@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Footer */}
       <section id="footer" className="bg-primary">
         {/* Flex Container */}
-        <div className="container max-w-7xl mx-auto lg:py-3">
+        <div className="container max-w-7xl mx-auto lg:py-2">
           <div className="flex flex-col items-center justify-between md:flex-row lg:mt-4">
 
             <div className="mt-6 w-auto md:mt-0">
@@ -21,17 +21,17 @@ const Footer = () => {
             <div className="w-auto mb-6">
               <ul className="flex flex-col items-center md:flex-row md:gap-2 lg:gap-8">
                 <li className="p-2">
-                  <a className="text-lg font-semibold text-white hover:text-gray-100" href="./privacy-policy">
+                  <a className="text font-semibold text-white hover:text-gray-100" href="./privacy-policy">
                     Privacy Policy
                   </a>
                 </li>
                 <li className="p-2">
-                  <Link className="text-lg font-semibold text-white hover:text-gray-100" href="/#portfolio">
+                  <Link className="text font-semibold text-white hover:text-gray-100" href="/#portfolio">
                     Portfolio
                   </Link>
                 </li>
                 <li className="p-2">
-                  <a className="text-lg font-semibold text-white hover:text-gray-100" href="/#contact">
+                  <a className="text font-semibold text-white hover:text-gray-100" href="/#contact">
                     Contact Us
                   </a>
                 </li>

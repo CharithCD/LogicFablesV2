@@ -7,12 +7,12 @@ export default function Home() {
       {/* Hero Section */}
       <section id="hero">
         <div
-          className="container p-8 -mt-12 mx-auto max-w-7xl flex flex-col-reverse md:flex-row items-center">
+          className="container p-8 -mt-8 mx-auto flex flex-col-reverse items-center md:flex-row md:max-w-2xl md:p-6 lg:max-w-7xl">
 
           {/* <!-- Left Item --> */}
           <div className="flex flex-col mb-12 space-y-9 lg:w-1/2">
             <h1
-              className="max-w-lg leading-[48px] text-3xl font-semibold text-center md:leading-[55px] md:text-4xl md:text-left lg:leading-[65px] lg:text-5xl text-darkAsh">
+              className="max-w-lg leading-[48px] text-3xl font-semibold text-center md:leading-[55px] md:text-3xl md:text-left lg:leading-[65px] lg:text-5xl text-darkAsh">
               Transforming Fables to Digital Reality:
               <span className="text-primary font-bold">Logic Fables</span>
             </h1>
@@ -21,6 +21,7 @@ export default function Home() {
               digital world. From stunning websites to custom web systems, our team is committed to delivering results that
               exceed your expectations.
             </p>
+
             <div className="flex justify-center md:justify-start">
               <Link href="#contact"
                 className="p-3 px-5 text-[15px] text-white bg-primary font-semibold rounded-full shadow-lg md:p-4 md:text-[18px] md:px-6 hover:bg-primaryDark">
@@ -42,10 +43,10 @@ export default function Home() {
         <div className="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
           <svg viewBox="0 0 88 88" className="w-full max-w-screen-xl text-purple-200">
             <circle fill="currentColor" cx="44" cy="44" r="15.5"></circle>
-            <circle fill-opacity="0.2" fill="currentColor" cx="44" cy="44" r="44"></circle>
-            <circle fill-opacity="0.2" fill="currentColor" cx="44" cy="44" r="37.5"></circle>
-            <circle fill-opacity="0.3" fill="currentColor" cx="44" cy="44" r="29.5"></circle>
-            <circle fill-opacity="0.3" fill="currentColor" cx="44" cy="44" r="22.5"></circle>
+            <circle fillOpacity="0.2" fill="currentColor" cx="44" cy="44" r="44"></circle>
+            <circle fillOpacity="0.2" fill="currentColor" cx="44" cy="44" r="37.5"></circle>
+            <circle fillOpacity="0.3" fill="currentColor" cx="44" cy="44" r="29.5"></circle>
+            <circle fillOpacity="0.3" fill="currentColor" cx="44" cy="44" r="22.5"></circle>
           </svg>
         </div>
 
