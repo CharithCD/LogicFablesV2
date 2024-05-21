@@ -7,7 +7,7 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section id="hero">
-        <ModeToggle/>
+        <ModeToggle />
         <div
           className="container p-8 -mt-8 mx-auto flex flex-col-reverse items-center md:flex-row md:max-w-2xl md:p-6 lg:max-w-7xl">
 
@@ -32,7 +32,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex align-middle md:w-3/5 lg:w-1/2">
-            <img src="./img/hero-image.png" className="max-h-[800px]" alt="hero-image" />
+            <Image src="/img/hero-image.png" width={600} height={600} className="max-h-[800px]" alt="hero-image" />
           </div>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function Home() {
             className="flex flex-col mx-4 text-left p-10 transition-shadow duration-200 bg-white rounded shadow-lg group hover:shadow-2xl md:mx-0">
             <div className="">
               <div className="flex items-center justify-center w-12 h-14 mb-4 rounded-full ">
-                <img src="./img/flash.png" alt="" />
+                <Image src="/img/flash.png" width={48} height={56} alt="Settings Icon" />
               </div>
               <p className="text-center text-primary mt-4 mb-7 text-[20px] font-bold">WordPress Development</p>
               <p className="text-justify leading-6 text-lightAsh">
@@ -85,7 +85,7 @@ export default function Home() {
             className="flex flex-col mx-4 text-left p-10 transition-shadow duration-200 bg-white rounded shadow-primaryDark group hover:shadow-2xl md:mx-0">
             <div className="">
               <div className="flex items-center justify-center w-12 h-14 mb-4 rounded-full ">
-                <img src="./img/flash.png" alt="" />
+                <Image src="/img/flash.png" width={48} height={56} alt="Settings Icon" />
               </div>
               <p className="text-center text-primary mt-4 mb-7 text-[20px] font-bold">Custom Web Development</p>
               <p className="text-justify leading-6 text-lightAsh ">
@@ -104,7 +104,7 @@ export default function Home() {
             className="flex flex-col mx-4 text-left p-10 transition-shadow duration-200 bg-white rounded shadow-primaryDark group hover:shadow-2xl md:mx-0">
             <div className="">
               <div className="flex items-center justify-center w-12 h-14 mb-4 rounded-full ">
-                <img src="./img/flash.png" alt="" />
+                <Image src="/img/flash.png" width={48} height={56} alt="Settings Icon" />
               </div>
               <p className="text-center mt-4 mb-7 text-primary text-[20px] font-bold">Website Optimization</p>
               <p className="text-justify leading-6 text-lightAsh">
@@ -154,7 +154,7 @@ export default function Home() {
         <div className="mt-10 mx-auto grid gap-16 grid-cols-1 md:mt-0 lg:grid-cols-3">
 
           <div className="relative h-[400px] w-5/6 mx-auto ">
-            <img src="./img/uni.jpg" alt="university web design" className="h-full rounded-md" />
+            <Image src="/img/uni.jpg" alt="university web design" width={400} height={400} className="h-full rounded-md" />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
 
             <div className="absolute bottom-4 left-4 text-left ">
@@ -170,7 +170,7 @@ export default function Home() {
           </div>
 
           <div className="relative h-[400px] w-5/6 mx-auto">
-            <img src="./img/ecom.jpg" alt="e-commerce web design" className="h-full rounded-md" />
+            <Image src="/img/ecom.jpg" alt="e-commerce web design" width={400} height={400} className="h-full rounded-md" />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
             <div className="absolute bottom-4 left-4 text-left">
               <h1 className="text-lg font-semibold text-white">Red Store</h1>
@@ -185,7 +185,7 @@ export default function Home() {
           </div>
 
           <div className="relative h-[400px] w-5/6 mx-auto">
-            <img src="./img/ads.png" alt="AirMax Pro" className="z-0 h-full w-full rounded-2xl object-cover" />
+            <Image src="/img/ads.png" alt="ads agency web design" width={400} height={400}  className="h-full rounded-md" />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
             <div className="absolute bottom-4 left-4 text-left">
               <h1 className="text-lg font-semibold text-white">XYPO</h1>
@@ -245,8 +245,8 @@ export default function Home() {
                 </button>
               </form>
             </div>
-            <img alt="Contact us" className="hidden max-h-[30rem] w-full rounded-lg object-cover lg:block"
-              src="./img/contact.svg" />
+            <Image alt="Contact us" className="hidden max-h-[30rem] w-full rounded-lg object-cover lg:block"
+              src="/img/contact.svg" width={800} height={480}/>
           </div>
         </div>
       </section>
