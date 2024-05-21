@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/mode-toggle";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section id="hero">
+        <ModeToggle/>
         <div
           className="container p-8 -mt-8 mx-auto flex flex-col-reverse items-center md:flex-row md:max-w-2xl md:p-6 lg:max-w-7xl">
 

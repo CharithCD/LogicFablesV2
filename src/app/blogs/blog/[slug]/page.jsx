@@ -41,7 +41,7 @@ const page = async ({ params }) => {
                     />
                 </div>
             </div>
-            <div className='max-w-5xl px-8 mx-auto my-8 flex flex-col prose prose-headings:text-red-900 md:p-4'>
+            <div className='max-w-5xl px-8 mx-auto my-8 flex flex-col prose prose-lg md:p-4'>
                 <PortableText value={blog.content} className=''></PortableText>
             </div>
             <div className='mt-24'>
